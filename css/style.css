@@ -1619,7 +1619,7 @@ textarea.form-control {
         padding: 15px;
         top: 0;
         box-shadow: none;
-        top:51px;
+       
     }
 }
 @media (min-width: 768px) {
@@ -6429,7 +6429,7 @@ h2, h3, h4, h5, h6 {
     border-right-width: 1px;
     border-right-style: solid;
     border-right-color: #CCC;
-    display: inline-block!important;
+    display: inline-block;
 }
 li {
     line-height: 20px;
