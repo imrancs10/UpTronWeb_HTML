@@ -1606,7 +1606,7 @@ textarea.form-control {
 .navbar-brand {
     height: auto;
     float: left;
-    position: absolute;
+    /*position: absolute;*/
     z-index: 1000;
     background-color: #ffffff;
 }
@@ -1624,8 +1624,8 @@ textarea.form-control {
 }
 @media (min-width: 768px) {
     .navbar-brand {
-        height: 130px;
-        padding: 70px 3px;
+        height: 45px;
+        padding: 10px 3px;
         width: 257px;
         top: -60px;
          /*box-shadow: 0 7px 21px rgba(0, 0, 0, 0.1);*/
