@@ -7,7 +7,7 @@
   <meta charset="utf-8">
   <meta http-equiv="X-UA-Compatible" content="IE=edge">
   <meta name="viewport" content="width=device-width, initial-scale=1">
-  <title>Uptron Powertronics Limited</title>
+  <title>UPTRON POWERTRONICS LIMITED</title>
 
   <!-- GOOGLE FONT -->
   <link href="https://fonts.googleapis.com/css?family=Open+Sans:300,400,600,700" rel="stylesheet">
@@ -28,8 +28,12 @@
   <link href="plugins/owl-carousel/owl.carousel.min.css" rel="stylesheet" media="screen">
   <link href="plugins/fancybox/jquery.fancybox.pack.css" rel="stylesheet">
   <link href="plugins/isotope/isotope.min.css" rel="stylesheet">
-  <link href="plugins/datepicker/datepicker.min.css" rel="stylesheet">
+<!--  <link href="plugins/datepicker/datepicker.min.css" rel="stylesheet">-->
   <link href="plugins/bootstrapthumbnail/bootstrap-thumbnail.css" rel="stylesheet">
+
+  <!-- Datepicker CSS -->
+    <link href="css/zebra_datepicker.min.css" rel="stylesheet" type="text/css" />
+    <link href="css/examples.css" rel="stylesheet" type="text/css" />
     
   <!-- CUSTOM CSS -->
   <link href="css/style.css" rel="stylesheet">
@@ -47,6 +51,11 @@
     <link href="css/slider/css/settings.css" rel="stylesheet" />
     <link href="css/slider/css/font-awesome.min.css" rel="stylesheet" />
 
+
+    <script type="text/javascript">
+        SyntaxHighlighter.defaults['toolbar'] = false;
+        SyntaxHighlighter.all();
+        </script>
 <body class="body-wrapper static">
   <div class="se-pre-con"></div>
   <div class="main-wrapper">
@@ -169,16 +178,16 @@
                                      <div class="form-group">
                                         <div class="col-md-6">
                                             <div class="form-group mt-lg">
-                                                <label class="col-sm-4 control-label">Date Of Birth (DD/MM/YYYY)<span style="color:red;">*</span></label>
+                                                <label class="col-sm-4 control-label">Date Of Birth<span style="color:red;">*</span></label>
                                                 <div class="col-sm-8">
-                                                    <div class="input-group input-group-in">
-                                                        <input data-input="daterangepicker" data-single-date-picker="true" data-show-dropdowns="true" class="form-control" placeholder="Date Of Birth (DD/MM/YYYY)">
-                                                        <span class="input-group-addon"><i class="fa fa-calendar"></i></span>
+                                                    <div class="input-group input-group-icon">
+                                                        <input data-input="daterangepicker" data-single-date-picker="true" data-show-dropdowns="true" class="form-control" placeholder="(DD/MM/YYYY)"  id="datepicker" />
+                                                        <span class="input-group-addon"><i class="fa fa-calendar" ></i></span>
                                                       </div>
-                                                </div>
-                                            </div>
-                                           
-                                        </div>
+                                                  </div>
+                                                  </div>
+                                                  </div>
+                                                      
                                         <!--<div class="col-md-6">
                                             <div class="form-group mt-lg">
                                                 <label class="col-sm-4 control-label">Category <span style="color:red;">*</span></label>
@@ -634,7 +643,7 @@
                                                         <input type="file" name="file" />
                                                     </form>
                                                 </div>
-                                                <span style="color:red;">Upload Resume size should be or equal to 1 Mb.</span>
+                                                <span style="color:red;">Upload Resume size should be or equal to 400 KB.</span>
                                             </div>
                                         </div>
                                         <div class="col-md-6">
@@ -645,7 +654,7 @@
                                                         <input type="file" name="file" />
                                                     </form>
                                                 </div>
-                                                <span style="color:red;">Upload Photo size should be or equal to  200 Kb.</span>
+                                                <span style="color:red;">Upload Photo size should be or equal to  200 KB.</span>
                                             </div>
                                         </div>
                                     </div>
@@ -678,8 +687,11 @@
                                                     <div class="form-group mt-lg">
                                                             <select name="filledby" id="Select6" runat="server" class="form-control required">
                                                                 <option value="0">Select Qualification</option>
-					                                            <option value="PHD" selected="selected">PHD</option>    
-                                                                <option value="B-ED">B-ED</option>
+					                                            <option value="PHD" selected="selected">High School</option>    
+                                                                <option value="Seniorsecondary">Senior Secondary School</option>
+                                                                <option value="Bachelor’s">Bachelor’s Degree</option>
+                                                                <option value="Master’s">Master’s Degree</option>
+                                                                <option value="ePHD/BED">PHD / BED</option>
 				                                            </select>
                                                     </div>
                                                 </td>
@@ -1125,8 +1137,17 @@
                                                 <div class="col-sm-8">
                                                     <select name="filledby" id="Select35" runat="server" class="form-control required">
                                                         <option value="0">Select Experience</option>
-					                                    <option value="Fresher" selected="selected">Fresher</option>    
-                                                        <option value="Experience">Experience</option>
+					                                    <option value="1Years" selected="selected">1 Years</option>    
+                                                        <option value="2Years">2 Years</option>
+                                                        <option value="3Years">3 Years</option>
+                                                        <option value="4Years">4 Years</option>
+                                                        <option value="5Years">5 Years</option>
+                                                        <option value="6Years">6 Years</option>
+                                                        <option value="7Years">7 Years</option>
+                                                        <option value="8Years">8 Years</option>
+                                                        <option value="9Years">9 Years</option>
+                                                        <option value="10Years">10 Years</option>
+                                                        
 				                                    </select>
                                                 </div>
                                             </div>
@@ -1369,7 +1390,10 @@
         }
 </script>
 
-<script type="text/javascript" src="//translate.google.com/translate_a/element.js?cb=googleTranslateElementInit"></script>   
+<!--date-->
+    <script src="js/examples.js" type="text/javascript"></script>
+    <script src="js/zebra_datepicker.min.js" type="text/javascript"></script>
+    <!--end-->
 </body>
 </html>
 

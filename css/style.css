@@ -2,6 +2,7 @@
     outline: 0;
     margin: 0;
     padding: 0;
+    cursor:pointer;
 }
 html,
 * {
@@ -43,6 +44,13 @@ slider1-area p {
     .caption h2 {
         font-size:15px;
     }
+    #weblink  
+    {
+        font-size: 9px !important;
+        margin-left: -12px;
+        margin-right: 14px;
+        margin-top: 0px;
+    }
 }
 @media (min-width: 768px) {
     p {
@@ -50,6 +58,13 @@ slider1-area p {
         line-height: 22px;
         margin-bottom: 15px;
     }
+    #weblink  
+    {
+        font-size: 14px !important;
+        margin-left: -21px;
+        margin-top: 0px;
+    }
+    
 }
 h1,
 h2,
@@ -713,7 +728,7 @@ body.bodyColor .bb-fixed-header {
     height: 43px;
     box-shadow: none;
     border-radius: 0;
-    padding-left: 18px;
+    padding-left: 8px;
     border-color: #dedede;
     color: #666666;
 }
@@ -1615,21 +1630,20 @@ textarea.form-control {
 }
 @media (min-width: 320px) {
     .navbar-brand {
-        width: 200px;
-        padding: 15px;
+        width: 215px;
+        padding: 10px;
         top: 0;
         box-shadow: none;
-       
+        top:51px;
     }
 }
 @media (min-width: 768px) {
     .navbar-brand {
-        height: 45px;
-        padding: 10px 3px;
-        width: 257px;
-        top: -60px;
-         /*box-shadow: 0 7px 21px rgba(0, 0, 0, 0.1);*/
-
+        height: 70px;
+            padding: 5px 3px;
+        width: 300px;
+        top: 10px;
+        /*box-shadow: 0 7px 21px rgba(0, 0, 0, 0.1);*/
     }
 }
 @media (min-width: 992px) {
@@ -1678,7 +1692,7 @@ textarea.form-control {
 @media (min-width: 992px) {
     .navbar-default .navbar-nav>li>a {
         margin: 0;
-        padding: 30px 15px;
+        padding: 35px 15px;
     }
 }
 .navbar-default .navbar-nav>li.active a {
@@ -5876,6 +5890,7 @@ input[type=number]::-webkit-inner-spin-button {
     font-size: 20px;
     font-weight: 400;
     margin-bottom: 15px;
+    padding:5px;
 }
 @media (min-width: 768px) {
     .blogPost h2 {
@@ -6631,7 +6646,7 @@ p {
     float: right;
     color: #fff;
     font-size: 20px;
-    cursor: pointer;
+    cursor:pointer;
     text-align: center;
     width: 140px;
     height: 38px;
@@ -6690,6 +6705,7 @@ p {
 }
 .service1-area {
     position: relative;
+    z-index: 9999999999999999999999999;
 }
 .service1-area .service1-inner-area {
     position: relative;
@@ -6697,7 +6713,7 @@ p {
     left: 0;
     right: 0;
     margin: 0 auto;
-    z-index: 9;
+    z-index: 9999999999999999999999999;
     margin-bottom: -153px;
 }
 .service-box1 {
@@ -6804,6 +6820,7 @@ a:active, a:hover, a:focus {
 .demof {
 border: 1px solid #ccc;
 margin: 0px 0;
+margin-left: 5px;
 }
 .demof ul {
 padding: 0;
@@ -7705,7 +7722,8 @@ a {
 }
 p {
     line-height: 1.5;
-    margin: 2px 0 20px 0;
+    margin: -4px 0 20px 0;
+    padding:5px;
 
 }
 .courses-box2 .single-item-wrapper .courses-content-wrapper .courses-info li {
@@ -7840,7 +7858,7 @@ wrapper>.glyph-icon {
     left: 0px;
     position: fixed;
     margin-right: 0px;
-    z-index: 9999;
+    z-index: 9999999999999999999999999999;
     /*background-color: #fff;*/
     background-color: rgba(0,0,0,0.5);
     -webkit-border-top-right-radius: 10px;
@@ -7958,7 +7976,8 @@ max-width: 370px;
 .contact-pic {
     background-color: #fff;
     padding: 10px;
-    margin-right: 3px;
+    margin-right: 13px;
+    margin-left: 5px;
     margin-bottom: 15px;
     border: 1px dashed #c2c6ca;
     color: #000;
@@ -7990,7 +8009,7 @@ max-width: 370px;
 .contentbox h4 {
     border-bottom: 1px dashed #4d90fe;
     padding-bottom: 10px;
-    text-transform: uppercase;
+    text-transform: capitalize;
     color: #4d90fe;
     margin-left:150px;
 }
@@ -8104,3 +8123,7 @@ hr {
     border-color: #ccc;
 }*/
 
+.table-primary, .table-primary>td, .table-primary>th {
+    background-color: #4d90fe;
+    color: #fff;
+}
