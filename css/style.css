@@ -3623,8 +3623,8 @@ textarea.form-control {
     padding: 0 20px 50px 20px;
 }
 figure {
-    position: relative;
-    height: auto;
+    nposition: relative;
+    height: 250px;
 }
 .isotopeSelector .overlay {
     width: 100%;
@@ -7673,7 +7673,7 @@ h2 {
 .carousel-inner>.item>a>img, .carousel-inner>.item>img, .img-responsive, .thumbnail a>img, .thumbnail>img {
     display: block;
     max-width: 100%;
-    height: auto;
+    height: 250px;
 }
 .courses-box2 .single-item-wrapper .courses-img-wrapper a {
     opacity: 0;

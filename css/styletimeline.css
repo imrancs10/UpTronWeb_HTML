@@ -2263,7 +2263,7 @@
       height: 1px;
       width: 5%;
       position: absolute;
-      background-color: #000;
+      /*background-color: #000;*/
       top: 16px;
       right: 8px; }
     .timeLine .row .item .caption {
